@@ -1,0 +1,47 @@
+
+//Write a C++ Program to find Factorial of a number using class
+
+
+#include <iostream>
+using namespace std;
+
+
+class fact {
+  
+ private:
+  int number;
+
+ public:
+  void factorial(int n) {
+    
+    number = n;
+
+   
+    int place, factorial = 1;
+
+    
+    for (place = number; place >= 1; place--) {
+      
+      factorial *= place;
+    }
+
+    
+    cout << "fact of " << number << " is " << factorial << endl;
+  }
+};
+
+int main() {
+
+  fact F;
+
+  
+  int n;
+
+  cout << "Enter Number: ";
+  cin >> n;
+
+  
+  F.factorial(n);
+
+  return 0;
+}
